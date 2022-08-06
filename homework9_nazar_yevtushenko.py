@@ -32,5 +32,5 @@ if __name__ == '__main__':
     list2 = [1, 2, [3, 4, [5, 6], 7], 8]
 
     print(sum_built(list1))
-    print(sum_built(list1))
+    print(sum_own(list1))
     print(sum_recursion(list2))
