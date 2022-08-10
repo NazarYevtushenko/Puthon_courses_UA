@@ -61,8 +61,6 @@ def non_magic_metods3(type_in) -> list:
 
 SQUARE_HASH = {}
 
-
-#
 def square_sum_hash(fun):
     def wrapper(*args):
         if args in SQUARE_HASH.keys():
