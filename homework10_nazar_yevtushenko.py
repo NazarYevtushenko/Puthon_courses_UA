@@ -24,6 +24,51 @@ def non_magic_metods(type_in) -> list:
     return [method for method in dir(type_in) if method[:2] != '__']
 
 
+#TODO 3. 30 баллов
+# дописать декоратор, чтобы он принимал аргумент, например текст.
+# и выводил его тоже.
+
+def text_out(text):
+    def methods_amount_upg(fun):
+        def wrapper(type_in):
+            func = fun(type_in)
+            print(text, len(func))
+        return wrapper
+    return methods_amount_upg
+
+@text_out(text='Num')
+def non_magic_metods3(type_in) -> list:
+    return [method for method in dir(type_in) if method[:2] != '__']
+
+#TODO 4. 30 баллов
+# Ваша задача - создать декоратор для функции, которая принимает неограниченное количество позиционных
+# ХЕШИРУЕМЫХ элементов.
+# Декоратор добавляет следующий функционал:
+# Если функция уже вызвалась с такими аргументами - ваша функция должна вернуть результат выполнения этой функции
+# из памяти, а не вычислять его заного.
+# Если не вызывалась - вычислить результат, положить его в память, и вернуть.
+# Подсказка - тут вам пригодятся словари.
+
+# SQUARE_HASH = {}
+#
+# def square_sum_hash(fun):
+#     sum = 0
+#     def wrapper(*args)
+#     for arg in args:
+#         if arg in SQUARE_HASH.keys():
+#             sum += SQUARE_HASH[arg]
+#             print(True)
+#         else:
+#             SQUARE_HASH[arg] = arg ** 2
+#             sum += SQUARE_HASH[arg]
+#             print(False)
+#     return sum
+#
+#
+# def square_sum(*args):
+#     return sum(arg ** 2 for arg in args)
+
+
 def main():
     #TODO 1 Test
 
@@ -32,6 +77,14 @@ def main():
 
     # TODO 2 Test
     print(non_magic_metods(type_in=tuple()))
+
+    # TODO 3 Test
+
+    texts = non_magic_metods3(str())
+
+    #TODO 4 Test
+    # print(square_sum(2,2,5,6,7,6))
+    # print(SQUARE_HASH)
 
 if __name__ == '__main__':
     main()
