@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f40747-6736-40a5-96b0-d89051c837e5" name="Changes" comment="06.08">
+      <change afterPath="$PROJECT_DIR$/homework11.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework10_nazar_yevtushenko not ready.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework10_nazar_yevtushenko not ready.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework10_nazar_yevtushenko.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework10_nazar_yevtushenko.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +42,7 @@
       <recent name="C:\Users\Marketing\OneDrive\Документы\GitHub\Puthon_courses_UA" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.homework10_nazar_yevtushenko not ready">
+  <component name="RunManager" selected="Python.homework10_nazar_yevtushenko">
     <configuration name="homework10_nazar_yevtushenko not ready" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Puthon_courses_UA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -149,9 +150,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.homework10_nazar_yevtushenko" />
         <item itemvalue="Python.homework10_nazar_yevtushenko not ready" />
         <item itemvalue="Python.scratch_1" />
-        <item itemvalue="Python.homework10_nazar_yevtushenko" />
         <item itemvalue="Python.homework8_nazar_yevtushenko" />
         <item itemvalue="Python.homework9_nazar_yevtushenko" />
       </list>
@@ -173,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659781624847</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="06.08">
+      <created>1660119921900</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660119921900</updated>
+    </task>
+    <task id="LOCAL-00003" summary="06.08">
+      <created>1660119962970</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660119962970</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
