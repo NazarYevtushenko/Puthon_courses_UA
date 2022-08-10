@@ -72,8 +72,6 @@ def square_sum_hash(fun):
 
     return wrapper
 
-
-#
 @square_sum_hash
 def square_sum(*args):
     return sum(arg ** 2 for arg in args)
