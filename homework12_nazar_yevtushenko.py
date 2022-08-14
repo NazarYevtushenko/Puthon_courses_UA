@@ -36,7 +36,12 @@ def sums(a,b):
 # Написать функцию которая с помощью assert будет тестировать ваш самопистный reduce
 
 def my_reduce_test(func, test, last_element = None):
-    assert (reduce(func, test, last_element) == my_reduce(func, test, last_element)), 'Func works incorrect'
+    try:
+        assert (
+                reduce(func, test, last_element) == my_reduce(func, test, last_element)), \
+            'Func my_reduce works incorrect'
+    except Exception as e:
+        print(e)
     return reduce(func, test) == my_reduce(func, test)
 
 lists = [2,4,5,6,7,8,12]
@@ -46,11 +51,12 @@ print(my_reduce_test(sums, lists))
 # созданного экземпляра класса.
 # В конструкторе(init) вашего класса пускай будут те параметры которые вы захотите.
 
-# class Locals:
-#     def __init__(self):
-#         pass
-#
-#     def locals_define(self):
+class Locals:
+    def __init__(self, name):
+        self.name = name
+
+    def locals_define(self):
+        return self.__dict__
 
 # Задача 6. бонусная задача C GitHub
 # сгенерировать ssh ключь
@@ -79,6 +85,10 @@ def main():
     }
     dict_union = dict_sum(dict1,dict2)
     print(next(dict_union))
+
+    #Task 5
+    tert = Locals("Define")
+    print(tert.locals_define())
 
 if __name__ == "__main__":
     main()
