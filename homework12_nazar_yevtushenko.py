@@ -45,20 +45,13 @@ print(my_reduce_test(sums, lists))
 # Задача 4. 30 баллов: Создать класс с методом которого можно будет возвращать область видимости(local)
 # созданного экземпляра класса.
 # В конструкторе(init) вашего класса пускай будут те параметры которые вы захотите.
-class Locals:
-    def __init__(self):
-        pass
 
-    def locals_define(self):
+# class Locals:
+#     def __init__(self):
+#         pass
+#
+#     def locals_define(self):
 
-# Задача 5. 20 баллов. Пройти тест
-#
-# https://holypython.com/advanced-python-exercises/exercise-4-classes/
-#
-# Exercise 4-c: Jet Fighter Instances
-#
-# C Баглом. Пропустить.
-##
 # Задача 6. бонусная задача C GitHub
 # сгенерировать ssh ключь
 # сохранить его в ГитХабе
