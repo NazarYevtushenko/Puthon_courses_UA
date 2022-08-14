@@ -26,12 +26,12 @@ def my_reduce(func, iterable, last_elements = None):
     :param last_element: - default: None. If something passed after iter obj
     :return: - stacked element
     """
-    iterator = iter(iterable)
-    if last_elements == None:
-        value = next(iterator)
-    else:
+    iterator = iter(iterable) #Create iterator from iterable obj
+    if last_elements == None: #If nothing going after all
+        value = next(iterator) #First value from iter
+    else: #If nothing going after all
         value = last_elements
-    for it in iterator:
+    for it in iterator: #Loops 
         value = func(value, it)
     return value
 
