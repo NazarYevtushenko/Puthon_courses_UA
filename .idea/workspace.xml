@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f40747-6736-40a5-96b0-d89051c837e5" name="Changes" comment="10.08">
+      <change beforePath="$PROJECT_DIR$/.idea/Puthon_courses_UA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Puthon_courses_UA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/homework12_nazar_yevtushenko.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework12_nazar_yevtushenko.py" afterDir="false" />
     </list>

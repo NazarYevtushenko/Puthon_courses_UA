@@ -19,6 +19,13 @@ def dict_sum(dict1, dict2: dict) -> dict:
 # Написать свою реализацию функции reduce() с описанием ее работы в однострочных и многострочных комментариях.
 #
 def my_reduce(func, iterable, last_elements = None):
+    """
+    Custom reduce element
+    :param func: - Function, which will use with iterable obj
+    :param test: - Iterable object
+    :param last_element: - default: None. If something passed after iter obj
+    :return: - stacked element
+    """
     iterator = iter(iterable)
     if last_elements == None:
         value = next(iterator)
@@ -36,6 +43,8 @@ def sums(a,b):
 # Написать функцию которая с помощью assert будет тестировать ваш самопистный reduce
 
 def my_reduce_test(func, test, last_element = None):
+
+
     try:
         assert (
                 reduce(func, test, last_element) == my_reduce(func, test, last_element)), \
