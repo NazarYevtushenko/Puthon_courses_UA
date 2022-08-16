@@ -12,12 +12,14 @@ class Counter:
 
 # __repr__
 
+
 class Cat:
     def __init__(self, name):
         self.name = name
 
     def __repr__(self): #Для отображения в режиме отладки(Для разработчика или если метод __str__ не предопределен - тогда для вывода в print)
         return f'{self.__class__}: {self.name}'
+
 
     def __str__(self):
         return f'{self.name}'
@@ -91,8 +93,7 @@ class SingletonFive:
 
 
 
-if __name__ == '__main__':
-
+def main():
     #call check
     print("Call check")
     c = Counter()
@@ -122,3 +123,6 @@ if __name__ == '__main__':
 
     #Singeltone five check
     objs = [SingletonFive(str(n)) for n in range(10)]
+
+if __name__ == '__main__':
+    main()

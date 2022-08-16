@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="47f40747-6736-40a5-96b0-d89051c837e5" name="Changes" comment="10.08">
-      <change afterPath="$PROJECT_DIR$/homework13_nazar_yevtushenko.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Puthon_courses_UA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Puthon_courses_UA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +46,13 @@
       <recent name="C:\Users\Marketing\PycharmProjects\Puthon_courses_UA" />
       <recent name="C:\Users\Marketing\OneDrive\Документы\GitHub\Puthon_courses_UA" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="PythonConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Python.homework13_nazar_yevtushenko">
     <configuration name="homework10_nazar_yevtushenko" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
