@@ -1,6 +1,6 @@
 import unittest
 from homework15_nazar_yevtushenko import weather_now
-from unittest.mock import patch
+from unittest.mock import patch, MagicMock
 import json
 
 
@@ -14,16 +14,23 @@ class MyTestCase(unittest.TestCase):
     def test_nothing_to_geocode(self):
         self.assertEqual(weather_now(''), 'Nothing to geocode')
 
-    def test_mock(self):
+    @patch('homework15_nazar_yevtushenko.requests')
+    def test_mock_normal_result(self, mock_requests):
         with open('weather.json') as file:
             fake_json = json.load(file)
-        with patch("homework15_nazar_yevtushenko.requests.get") as mocked_get:
-            mocked_get.return_value.response = 200
-            mocked_get.return_value.response = fake_json
-            mocked_get.assert_called_with('http://api.openweathermap.org/data/2.5/weather?q=Kharkiv&appid=d82759ebf4a4a5ed987117c4027b9dfa&units=metric')
-            weather = weather_now('kharkiv')
-            self.assertEqual(weather, "temp = 30.38, pressure =1014, weather_description = 'moderate rain'")
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.json.return_value = fake_json
+        mock_requests.get.return_value = mock_response
+        self.assertEqual(weather_now('kharkiv'), "temp = 30.38, pressure = 1014, weather_description = 'overcast clouds'")
 
+    @patch('homework15_nazar_yevtushenko.requests')
+    def test_400_status(self, mock_requests):
+        mock_response = MagicMock()
+        mock_response.status_code = 400
+
+        mock_requests.get.return_value = mock_response
+        self.assertIsNone(weather_now('kharkiv'))
 
 
 if __name__ == '__main__':
