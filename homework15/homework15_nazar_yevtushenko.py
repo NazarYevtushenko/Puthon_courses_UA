@@ -7,8 +7,7 @@ load_dotenv()
 
 WEATHER_ENDPOINT = 'http://api.openweathermap.org/data/2.5/weather'
 API_KEY = os.getenv("WEATHER-API-KEY")
-# city = input('please fill up your city ')
-city = 'Krkiv'
+city = input('please fill up your city ')
 
 def weather_now(city) -> str:
     '''
