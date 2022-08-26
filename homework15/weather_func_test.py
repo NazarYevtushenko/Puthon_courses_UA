@@ -28,9 +28,10 @@ class MyTestCase(unittest.TestCase):
     def test_400_status(self, mock_requests):
         mock_response = MagicMock()
         mock_response.status_code = 400
+        mock_response.json.return_value = {'cod': '400', 'message': 'Bad Request'}
 
         mock_requests.get.return_value = mock_response
-        self.assertIsNone(weather_now('kharkiv'))
+        self.assertEqual(weather_now('kharkiv'), "Bad Request")
 
 
 if __name__ == '__main__':

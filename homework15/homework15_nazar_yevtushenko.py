@@ -30,6 +30,7 @@ def weather_now(city) -> str:
     else:
         try:
             response.raise_for_status()
+            return response.json()['message']
         except:
             return response.json()['message']
 
