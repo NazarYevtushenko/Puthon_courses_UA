@@ -20,7 +20,6 @@ def weather_now(city) -> str:
         'units': 'metric'
     }
     response = requests.get(url=WEATHER_ENDPOINT, params=weather_params)
-    url = response.url
     if response.status_code == 200:
         weather = response.json()['main']
         temp = weather['temp']
