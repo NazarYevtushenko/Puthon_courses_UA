@@ -1,14 +1,16 @@
 import requests  # pip install requests
 import os
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 
 WEATHER_ENDPOINT = 'http://api.openweathermap.org/data/2.5/weather'
 API_KEY = os.getenv("WEATHER-API-KEY")
-city = input('please fill up your city ')
+# city = input('please fill up your city ')
+city = 'Kharkiv'
 
-def weather_now(city: str) -> str:
+def weather_now(city) -> str:
     '''
     Show current temprature, pressure and description of weather in chosen city now
     :return: str
@@ -19,10 +21,11 @@ def weather_now(city: str) -> str:
         'units': 'metric'
     }
     response = requests.get(url=WEATHER_ENDPOINT, params=weather_params)
+    url = response.url
     try:
         response.raise_for_status()
     except:
-        print(response.json()['message'])
+            return response.json()['message']
     else:
         weather = response.json()['main']
         temp = weather['temp']
@@ -31,4 +34,4 @@ def weather_now(city: str) -> str:
         return f'{temp = }, {pressure =}, {weather_description = }'
 
 if __name__ == '__main__':
-    print(weather_now())
+    print(weather_now(city))

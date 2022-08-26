@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47f40747-6736-40a5-96b0-d89051c837e5" name="Changes" comment="10.08">
-      <change afterPath="$PROJECT_DIR$/homework15/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework15/homework15_nazar_yevtushenko.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework15/weather_now_test.py" afterDir="false" />
+    <list default="true" id="47f40747-6736-40a5-96b0-d89051c837e5" name="Changes" comment="26.08">
+      <change afterPath="$PROJECT_DIR$/homework15/Test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework15/weather.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework15/homework15_nazar_yevtushenko.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework15/homework15_nazar_yevtushenko.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework15/weather_now_test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +66,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for weather_now_test.MyTestCase">
-    <configuration name="homework13_nazar_yevtushenko" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Test">
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Puthon_courses_UA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,11 +75,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/homework15" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework13_nazar_yevtushenko.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework15/Test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -108,27 +109,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch_6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Puthon_courses_UA" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="weather_now_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Puthon_courses_UA" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for weather_now_test.MyTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for Test.MyTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Puthon_courses_UA" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,17 +140,31 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;weather_now_test.MyTestCase&quot;" />
+      <option name="_new_target" value="&quot;Test.MyTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for Test.MyTestCase.test_mock" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Puthon_courses_UA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/homework15" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Test.MyTestCase.test_mock&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for weather_now_test.MyTestCase" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.weather_now_test" />
         <item itemvalue="Python.homework15_nazar_yevtushenko" />
-        <item itemvalue="Python.scratch_6" />
-        <item itemvalue="Python.homework13_nazar_yevtushenko" />
+        <item itemvalue="Python tests.Python tests for Test.MyTestCase.test_mock" />
+        <item itemvalue="Python tests.Python tests for Test.MyTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660672407002</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="26.08">
+      <created>1661521944005</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661521944005</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,7 +272,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="06.08" />
     <MESSAGE value="10.08" />
-    <option name="LAST_COMMIT_MESSAGE" value="10.08" />
+    <MESSAGE value="26.08" />
+    <option name="LAST_COMMIT_MESSAGE" value="26.08" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
